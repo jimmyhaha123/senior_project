@@ -529,8 +529,8 @@ def main():
     verbosity = 1 if args.verbose else 0
 
     # compare average incumbent history across multiple trials
-    n_iters = 100
-    n_trials = 50
+    n_iters = 20
+    n_trials = 10
     # Create a run results output directory for plots
     out_root = os.path.join(os.path.dirname(__file__), 'run_results')
     timestamp = time.strftime('%Y%m%d_%H%M%S')
