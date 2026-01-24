@@ -12,6 +12,12 @@ import torch
 import time
 import csv
 import argparse
+import warnings
+warnings.filterwarnings(
+    "ignore",
+    message=r".*use_label_encoder.*are not used.*",
+    category=UserWarning,
+)
 
 # Ensure repo root (one level up) is on sys.path so `import MIVABO` and local modules resolve correctly
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
