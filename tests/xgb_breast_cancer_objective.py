@@ -47,6 +47,12 @@ from sklearn.metrics import log_loss, accuracy_score
 from xgboost import XGBClassifier
 
 from MIVABO import MixedSpace, DiscreteSpec, ContinuousSpec
+import warnings
+warnings.filterwarnings(
+    "ignore",
+    message=r".*use_label_encoder.*are not used.*",
+    category=UserWarning,
+)
 
 
 def _load_or_create_breast_cancer_split(
