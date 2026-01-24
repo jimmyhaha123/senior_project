@@ -48,11 +48,7 @@ from xgboost import XGBClassifier
 
 from MIVABO import MixedSpace, DiscreteSpec, ContinuousSpec
 import warnings
-warnings.filterwarnings(
-    "ignore",
-    message=r".*Parameters: \{.*use_label_encoder.*\} are not used\..*",
-    category=UserWarning,
-)
+warnings.filterwarnings("ignore", category=UserWarning, module=r"xgboost.*")
 
 
 def _load_or_create_breast_cancer_split(
