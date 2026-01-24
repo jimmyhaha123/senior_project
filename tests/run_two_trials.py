@@ -15,7 +15,7 @@ import argparse
 import warnings
 warnings.filterwarnings(
     "ignore",
-    message=r".*use_label_encoder.*are not used.*",
+    message=r".*Parameters: \{.*use_label_encoder.*\} are not used\..*",
     category=UserWarning,
 )
 
